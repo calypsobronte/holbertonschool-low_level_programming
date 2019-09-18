@@ -1,11 +1,8 @@
 #include <stdio.h>
-
 /**
- * Student: Lina M. Montaño Ramirez - Calypso Bronte
+ * Main / File
  */
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+int main() {
+	  puts("\"Programming is like building a multilingual puzzle");
+	  return 0;
 }
-
