@@ -6,10 +6,9 @@
  */
 int main(void)
 {
-int c = '0';
-while (c <= '9')
+char c;
+for (c = 48; c < 58; c++)
 putchar(c);
-c++;
 putchar('\n');
 return (0);
 }
