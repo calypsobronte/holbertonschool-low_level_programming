@@ -12,7 +12,7 @@ char c;
 char d;
 for (c = 48; c < 58; c++)
 putchar(c);
-for (d = 65; d < 71; d++)
+for (d = 97; d < 103; d++)
 putchar(d);
 putchar('\n');
 return (0);
