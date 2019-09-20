@@ -22,7 +22,7 @@ putchar(' ');
 }
 else
 {
-putchar(',');
+putchar('.');
 putchar(' ');
 }
 }
