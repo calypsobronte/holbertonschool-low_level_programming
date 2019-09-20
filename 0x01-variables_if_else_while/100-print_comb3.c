@@ -10,23 +10,12 @@ int main(void)
 {
 int i, c;
 for (i = 48; i < 58; i++)
-{
 for (c = i + 1; c < 58; c++)
-{
 putchar(i);
 putchar(c);
-if(i != 56 && c != 57)
-{
+if (i == 56 && c == 57)
 putchar(',');
 putchar(' ');
-}
-else
-{
-putchar('.');
-putchar(' ');
-}
-}
-}
 putchar('\n');
 return (0);
 }
