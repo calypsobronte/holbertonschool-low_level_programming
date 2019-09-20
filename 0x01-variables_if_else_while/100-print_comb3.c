@@ -22,6 +22,7 @@ putchar(' ');
 }
 else
 {
+putchar(',');
 putchar(' ');
 }
 }
