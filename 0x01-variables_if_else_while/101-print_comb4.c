@@ -19,7 +19,7 @@ for (l = c + 1; l < 58; l++)
 putchar(i);
 putchar(c);
 putchar(l);
-if (!((l == 55) && (i == 56) && (c == 57)))
+if (!(i == 55 && c == 56 && l == 57))
 {
 putchar(',');
 putchar(' ');
