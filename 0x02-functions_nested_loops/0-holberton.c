@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
 * main - empty file
 *
@@ -6,6 +7,7 @@
 */
 int main(void)
 {
+
 _putchar('H');
 _putchar('o');
 _putchar('l');
