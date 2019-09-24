@@ -13,12 +13,12 @@ int ret;
 if (n >= 0)
 {
 ret = n % 10;
-_putchar(ret + '0');
+_putchar('0' + ret);
 }
 else
 {
-ret = (n * -1) % 10;
-_putchar(ret + '0');
+ret = ((n * -1) % 10();
+_putchar('0' + ret);
 }
 return (ret);
 }
