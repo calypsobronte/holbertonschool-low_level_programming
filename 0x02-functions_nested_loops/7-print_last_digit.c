@@ -17,7 +17,7 @@ _putchar('0' + ret);
 }
 else
 {
-ret = ((n * -1) % 10();
+ret = ((n * -1) % 10);
 _putchar('0' + ret);
 }
 return (ret);
