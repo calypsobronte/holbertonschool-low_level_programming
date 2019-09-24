@@ -3,7 +3,7 @@
  * print_last_digit - writes the character c to stdout
  * @n: The character to print
  *
- * Return: 1 or 0
+ * Return: ret
  * On error, -1 is returned, and errno is set appropriately.
 */
 int print_last_digit(int n)
