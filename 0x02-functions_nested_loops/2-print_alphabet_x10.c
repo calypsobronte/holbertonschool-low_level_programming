@@ -1,6 +1,7 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * main - empty file
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
