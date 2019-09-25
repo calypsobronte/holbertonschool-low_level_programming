@@ -7,19 +7,19 @@
 
 int main(void)
 {
-long i, g, a, b, c, d;
-g = 0;
+int d;
+long a, b, c, e;
 a = 0;
 b = 1;
-for (c = 1; c < 33; c++)
+c = 0;
+for (d = 1; d < 100; d++)
 {
-d = a + b;
-i = c;
+e = a + b;
 a = b;
-b = d;
-if (i % 2 == 0 )
-d = d + c;
-printf("%ld\n", d);
-return (0);
+b = e;
+if (e % 2 == 0 && (c < 4000000))
+c = c + e;
 }
+printf("%d\n", d);
+return (0);
 }
