@@ -1,4 +1,9 @@
 #include "holberton.h"
+/**
+ * print_line - void
+ *
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 void print_line(int n)
 {
 int a;
