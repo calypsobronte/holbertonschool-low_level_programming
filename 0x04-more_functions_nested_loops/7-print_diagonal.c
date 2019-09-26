@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_line - void
+ * print_diagonal - void
  * @n: print
  *
  * On error, -1 is returned, and errno is set appropriately.
