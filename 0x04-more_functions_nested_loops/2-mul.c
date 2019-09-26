@@ -2,8 +2,9 @@
 /**
  * mul - writes the character a to stdout
  * @a: The character to print
+ * @b: The character to print
  * 
- * Return: On success 1.
+ * Return: z
  * On error, -1 is returned, and errno is set appropriately.
  */
 int mul(int a, int b)
