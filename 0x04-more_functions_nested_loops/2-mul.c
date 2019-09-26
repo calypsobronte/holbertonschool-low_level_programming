@@ -3,7 +3,7 @@
  * mul - writes the character a to stdout
  * @a: The character to print
  * @b: The character to print
- * 
+ *
  * Return: z
  * On error, -1 is returned, and errno is set appropriately.
  */
