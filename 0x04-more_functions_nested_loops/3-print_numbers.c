@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_numbers - writes the character c to stdout
+ * print_numbers - void
  *
  * On error, -1 is returned, and errno is set appropriately.
  */
