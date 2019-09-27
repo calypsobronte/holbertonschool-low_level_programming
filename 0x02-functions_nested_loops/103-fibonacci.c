@@ -9,17 +9,17 @@ int main(void)
 {
 int d;
 long a, b, c, e;
-a = 0;
-b = 1;
-c = 0;
-for (d = 1; d < 100; d++)
+a = 1;
+b = 2;
+c = 2;
+for (d = 0; d < 32; d++)
 {
 e = a + b;
+if (e < 4000000 && e % 2 == 0)
+c = c + e;
 a = b;
 b = e;
-if (e % 2 == 0 && (c < 4000000))
-c = c + e;
 }
-printf("%d\n", d);
+printf("%li\n", c);
 return (0);
 }
