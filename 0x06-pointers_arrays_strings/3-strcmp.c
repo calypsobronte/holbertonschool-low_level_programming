@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
  * _strcmp -  description
- * @s1: ///
- * @s2: ---
- * Return: dest
+ *@s1: string
+ *@s2: string
+ * Return: j
  */
 int _strcmp(char *s1, char *s2)
 {
