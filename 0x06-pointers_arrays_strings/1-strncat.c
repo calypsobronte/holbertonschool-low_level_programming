@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strncat -  description 
+ * _strncat -  description
  * @dest: ///
  * @src: ---
  * @n: ===
