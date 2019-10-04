@@ -16,7 +16,6 @@ for (b = 0; b < 6; b++)
 if (s[a] == c[b] || s[a] == c[b + 1])
 {
 s[a] = d[b];
-break;
 }
 }
 a++;
