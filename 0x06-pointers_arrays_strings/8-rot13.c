@@ -1,29 +1,22 @@
 #include "holberton.h"
 /**
- * rot13 - conver string o rot13 -
- * //sbcdefghijklmsBCDEFGHIJKLM += 13 -
- * //nopqrstuvwzyzNOPQRSTUVWXYZ = -13
+ * rot13 - string
  * @s: letter
  * Return: s
  */
 char *rot13(char *s)
 {
-int i = 0;
+int i = 0, j;
+char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 while (s[i] != 0)
 {
-if ((s[i] >= 'a' && s[i] <= 'm') ||
-(s[i] >= 'A' && s[i] <= 'M'))
+for (j = 0; a[j] != 0; j++)
+if (s[i] == a[j])
 {
-s[i] = s[i] + 13;
-}
-else
-{
-while ((s[i] >= 'n' && s[i] <= 'z') ||
-(s[i] >= 'N' && s[i] <= 'Z'))
-{
-s[i] = s[i] - 13;
-}
+s[i] = b[j];
+break;
 }
 i++;
 }
