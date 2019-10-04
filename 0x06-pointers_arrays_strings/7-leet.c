@@ -13,7 +13,7 @@ while (s[a] != 0)
 {
 for (b = 0; b < 6; b++)
 {
-if (s[a] == c[b] || s[a] + 32 == c[b + 1])
+if (s[a] == c[b] || s[a] + 32 == c[b])
 {
 s[a] = d[b];
 }
