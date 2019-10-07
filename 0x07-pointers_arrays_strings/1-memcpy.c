@@ -1,4 +1,11 @@
 #include "holberton.h"
+/**
+ * _memcpy - recorrido donde mandamos todo de la fuente al destino
+ * @dest: destino
+ * @src: fuente
+ * @n: n
+ * Return: dest
+ */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int a;
