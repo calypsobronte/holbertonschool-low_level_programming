@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * _strchr - print
+ * _strchr - print 0
  * @s: string
  * @c: string
+ * Return: 0
  */
 char *_strchr(char *s, char c)
 {
