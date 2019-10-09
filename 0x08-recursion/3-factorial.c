@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
  * factorial - print
- * @s: piont
+ * @n: piont
+ * Return: -1
  */
 int factorial(int n)
 {
