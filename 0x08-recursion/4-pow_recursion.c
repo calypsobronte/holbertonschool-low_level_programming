@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
  * _pow_recursion - print
- * @n: piont
+ * @x: piont
+ * @y: piont
  * Return: -1
  */
 int _pow_recursion(int x, int y)
