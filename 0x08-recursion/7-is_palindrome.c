@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 int end(char *t);
-int combine(char *s, char *t, int n);
+int combine(char *s, int n);
 /**
 * is_palindrome - Palin
 * @s: Parameter string
@@ -11,12 +11,10 @@ int combine(char *s, char *t, int n);
 */
 int is_palindrome(char *s)
 {
-char *t = s;
-int n = (end(t));
-t = t + (n - 1);
-if (*s != *t)
-return (0);
-return (combine(s, t, n));
+int n = end(s);
+if (n <= 1)
+return (1);
+return (combine(s, n));
 }
 
 /**
@@ -26,30 +24,27 @@ return (combine(s, t, n));
 */
 int end(char *t)
 {
-int c = 0;
-if (t[c] != '\0')
+if (*t == '\0')
 {
-c++;
-return (c + end(t + 1));
-}
-else
 return (0);
+}
+t++;
+return (1 + end(t));
 }
 
 /**
 * combine - Combine
 * @s: String
-* @t: String 2
 * @n: Size of string
 * Return: :smile:
 */
-int combine(char *s, char *t, int n)
+int combine(char *s, int n)
 {
-if (n > 0)
-{
-return (combine(s + 1, t - 1, n - 1));
-}
-if (*s == *t)
+if (n <= 1)
 return (1);
+else if (*s == *(s + n - 1))
+{
+return (combine(s + 1, n - 2));
+}
 return (0);
 }
