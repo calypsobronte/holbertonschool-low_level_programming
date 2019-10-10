@@ -15,9 +15,10 @@ char *t = s;
 int n = (end(t));
 t = t + (n - 1);
 if (*s != *t)
-    return (0);
+return (0);
 return (combine(s, t, n));
 }
+
 /**
 * end - Set pinter in end string
 * @t: Pointer parameter
@@ -25,15 +26,16 @@ return (combine(s, t, n));
 */
 int end(char *t)
 {
-    int c = 0;
+int c = 0;
 if (t[c] != '\0')
 {
-    c++;
-    return (c + end(t + 1));
+c++;
+return (c + end(t + 1));
 }
 else
-    return (0);
+return (0);
 }
+
 /**
 * combine - Combine
 * @s: String
@@ -45,9 +47,9 @@ int combine(char *s, char *t, int n)
 {
 if (n > 0)
 {
-    return (combine(s + 1, t - 1, n - 1));
+return (combine(s + 1, t - 1, n - 1));
 }
 if (*s == *t)
-    return (1);
+return (1);
 return (0);
 }
