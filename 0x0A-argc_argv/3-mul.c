@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - mul of two numbers 
+ * main - mul of two numbers
  * atoi: Converts a string to its numeric value (integer)
  * @argc: integer
  * @argv: point string
