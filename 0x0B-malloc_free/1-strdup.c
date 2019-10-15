@@ -13,11 +13,12 @@ unsigned int a = 0, i = 0;
 if (str == 0)
 return (NULL);
 else
+{
 while (str[a] != 0)
 {
 a++;
 }
-p = malloc(a * (sizeof(*str)));
+p = malloc(a * (sizeof(char)));
 if (p == 0)
 {
 return (NULL);
@@ -29,4 +30,5 @@ str++;
 i++;
 }
 return (p);
+}
 }
