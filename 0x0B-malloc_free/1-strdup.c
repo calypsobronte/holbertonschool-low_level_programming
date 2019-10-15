@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * _strdup - pasar el tama;o dependiendo de la cadena
@@ -17,7 +17,7 @@ while (str[a] != 0)
 {
 a++;
 }
-p = malloc(a * sizeof(char));
+p = malloc(a * (sizeof(*str)));
 if (p == 0)
 {
 return (NULL);
