@@ -16,7 +16,7 @@ return (NULL);
 }
 else
 {
-p = malloc(sizeof(char) * size);
+p = malloc(sizeof(c) * size);
 while (size--)
 {
 p[size] = c;
