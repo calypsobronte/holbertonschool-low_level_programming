@@ -14,13 +14,17 @@ if (size == 0)
 {
 return (NULL);
 }
+if (size != 0)
+{
+p = malloc(sizeof(char) * size);
+}
 else
 {
-p = malloc(sizeof(c) * size);
+return (NULL);
+}
 while (size--)
 {
 p[size] = c;
-}
 }
 return (p);
 }
