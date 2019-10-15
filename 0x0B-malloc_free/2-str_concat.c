@@ -26,6 +26,10 @@ j++;
 j++;
 k = i + j;
 p = malloc(k * (sizeof(char)));
+if (p == NULL)
+{
+return (NULL);
+}
 while (l < i)
 {
 p[l] = *s1;
