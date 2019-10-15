@@ -10,16 +10,14 @@ char *_strdup(char *str)
 {
 char *p;
 unsigned int a = 0, i = 0;
-if (str == 0)
+if (str == NULL)
 return (NULL);
-else
-{
-while (str[a] != 0)
+while (str[a] != '\0')
 {
 a++;
 }
 p = malloc(a * (sizeof(char)));
-if (p == 0)
+if (p == NULL)
 {
 return (NULL);
 }
@@ -29,5 +27,4 @@ p[i] = str[i];
 i++;
 }
 return (p);
-}
 }
