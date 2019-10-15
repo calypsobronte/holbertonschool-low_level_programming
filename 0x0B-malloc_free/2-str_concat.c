@@ -1,6 +1,12 @@
 #include "holberton.h"
 #include <stdio.h> 
 #include <stdlib.h>
+/**
+ * str_concat - pasar el tama;o dependiendo de la cadena
+ * @s1: char pointer
+ * @s2: char pointer
+ * Return: NULL
+ */
 char *str_concat(char *s1, char *s2)
 {
 unsigned int i = 0, j = 0, k = 0, l = 0;

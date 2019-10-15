@@ -2,7 +2,7 @@
 #include <stdio.h> 
 #include <stdlib.h>
 /**
- * create_array - pasar el tama;o dependiendo de la cadena
+ * _strdup - pasar el tama;o dependiendo de la cadena
  * @str: char pointer
  * Return: NULL
  */
