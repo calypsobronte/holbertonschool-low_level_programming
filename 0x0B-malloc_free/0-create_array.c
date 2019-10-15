@@ -23,5 +23,5 @@ p[size] = c;
 }
 return (p);
 }
-return (NULL);
+return (p);
 }
