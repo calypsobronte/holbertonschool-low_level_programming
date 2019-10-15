@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * str_concat - pasar el tama;o dependiendo de la cadena
@@ -23,8 +23,9 @@ while (s2[j] != 0)
 {
 j++;
 }
+j++;
 k = i + j;
-p = malloc(k * sizeof(char));
+p = malloc(k * (sizeof(char)));
 while (l < i)
 {
 p[l] = *s1;
@@ -40,5 +41,4 @@ l++;
 }
 return (p);
 }
-return (NULL);
 }
