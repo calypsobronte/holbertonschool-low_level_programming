@@ -19,7 +19,7 @@ else
 {
 return (NULL);
 }
-if (size == 0)
+if (p == 0)
 {
 return (NULL);
 }
