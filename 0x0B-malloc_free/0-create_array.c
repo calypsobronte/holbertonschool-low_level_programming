@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * create_array - pasar el tama;o dependiendo de la cadena
