@@ -18,16 +18,18 @@ return (NULL);
 for (a = 0; a < ac; a++)
 {
 for (b = 0; av[a][b] != '\0'; b++)
-c++;
+{
 c++;
 }
 c++;
-p = malloc(c * (sizeof(char)));
+}
+c++;
+p = malloc(sizeof(char) * c);
 if (p == NULL)
 return (NULL);
 for (a = 0; a < ac; a++)
 {
-for (b = 0; av[a][b] != "\0"; b++)
+for (b = 0; av[a][b] != '\0'; b++)
 {
 p[d++] = av[a][b];
 }
