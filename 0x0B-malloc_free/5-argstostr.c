@@ -21,7 +21,7 @@ for (a = 0; av[a]; a++)
 for (b = 0; av[a][b]; b++)
 c++;
 }
-p = malloc(c * (sizeof(char) + ac + 1));
+p = malloc(c * (sizeof(char *) + ac + 1));
 if (p == NULL)
 return (NULL);
 for (a = 0; av[a]; a++)
