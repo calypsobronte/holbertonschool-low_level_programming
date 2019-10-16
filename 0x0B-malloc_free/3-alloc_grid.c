@@ -27,7 +27,7 @@ if (arr[a] == NULL)
 {
 for (b = a; b >= 0; b--)
 {
-free(arr[a]);
+free(arr[b]);
 }
 free(arr);
 return (NULL);
