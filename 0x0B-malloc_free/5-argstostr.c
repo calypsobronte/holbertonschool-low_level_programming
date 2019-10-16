@@ -5,7 +5,7 @@
  * argstostr - punt
  * @ac: intero
  * @av: char
- * Returm: p
+ * Return: p
 */
 char *argstostr(int ac, char **av)
 {
