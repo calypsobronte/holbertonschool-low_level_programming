@@ -13,26 +13,25 @@ int a, b, c = 0, d = 0;
 char *p;
 if (ac == 0)
 return (NULL);
-if (av == 0)
+if (av == NULL)
 return (NULL);
-for (a = 0; ac; a++)
+for (a = 0; a < ac; a++)
 {
-for (b = 0; av[a][b] != 0; b++)
+for (b = 0; av[a][b] != '\0'; b++)
 c++;
-c++
+c++;
 }
 c++;
-p = malloc(c * sizeof(char));
+p = malloc(c * (sizeof(char)));
 if (p == NULL)
 return (NULL);
-for (a = 0; ac; a++)
+for (a = 0; a < ac; a++)
 {
-for (b = 0; av[a][b] != 0; b++)
+for (b = 0; av[a][b] != "\0"; b++)
 {
-p[d] = av[a][b];
-d++;
+p[d++] = av[a][b];
 }
-p[d] = '\n';
+p[d++] = '\n';
 }
 p[d] = '\0';
 return (p);
