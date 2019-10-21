@@ -27,7 +27,7 @@ if (p->name == NULL)
 free(p);
 return (NULL);
 }
-for (j = 0; j < i; j++)
+for (i = 0; i < j; i++)
 {
 p->name[i] = name[i];
 }
