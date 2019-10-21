@@ -10,11 +10,10 @@ if (d)
 {
     char *cname = (d->name);
     char *cowner = (d->owner);
-    float cage = (d->age)
     if (!cname)
     cname = "(nil)";
     if (!cowner)
     cowner = "(nil)";
-    printf("Name: %s\nAge: %f\nOwner: %s\n", cname, age, cowner);
+    printf("Name: %s\nAge: %f\nOwner: %s\n", cname, d->age, cowner);
 }
 }
