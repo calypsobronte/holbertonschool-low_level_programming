@@ -30,7 +30,9 @@ free(p);
 return (NULL);
 }
 for (j = 0; j < i; j++)
+{
 p->name[i] = name[i];
+}
 p->age = age;
 for (k = 0; owner[k]; k++)
 {
@@ -45,6 +47,8 @@ free(p);
 return (NULL);
 }
 for (i = 0; i < k; i++)
+{
 p->owner[i] = owner[i];
+}
 return (p);
 }
