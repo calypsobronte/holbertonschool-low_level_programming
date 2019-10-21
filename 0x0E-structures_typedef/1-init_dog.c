@@ -6,8 +6,6 @@
  * @age: float
  * @owner: char
  * @d: struct
- * @dog: struct
- * Return: point p
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
