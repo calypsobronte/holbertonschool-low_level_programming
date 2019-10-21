@@ -1,7 +1,7 @@
 #ifndef Dog
 #define Dog
 /**
- * dog - create libraries
+ * strdog - create libraries
  * @name: char
  * @age: float
  * @owner: char
