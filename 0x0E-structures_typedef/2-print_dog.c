@@ -8,8 +8,8 @@ void print_dog(struct dog *d)
 {
 if (d != NULL)
 {
-    char cname = (d->name);
-    char cowner = (d->owner);
+    char *cname = (d->name);
+    char *cowner = (d->owner);
     float cage = (d->age)
     if (!cname)
     cname = "(nil)";
