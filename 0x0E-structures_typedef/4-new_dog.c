@@ -42,7 +42,7 @@ k++;
 p->owner = malloc(k * (sizeof(char)));
 if (p->owner == NULL)
 {
-free(p->name)
+free(p->name);
 free(p);
 return (NULL);
 }
