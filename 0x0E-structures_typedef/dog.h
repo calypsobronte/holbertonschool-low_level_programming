@@ -5,7 +5,6 @@
  * @name: char
  * @age: float
  * @owner: char
- * 
  * Description: nose
  */
 struct dog
