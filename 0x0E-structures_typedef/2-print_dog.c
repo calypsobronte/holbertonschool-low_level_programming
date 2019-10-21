@@ -1,21 +1,20 @@
-/* libraries */
 #include "dog.h"
 #include <stdio.h>
+/**
+ * print_dog - diferent
+ * @d: struct dog
+ */
 void print_dog(struct dog *d)
 {
 if (d != NULL)
 {
-    if (!d->name)
-    printf("nil");
-    else
-    printf("Name: %s\n", d->name);
-    if (!d->age)
-    printf("nil");
-    else
-    printf("Age: %lf\n", d->age);
-    if (!d->owner)
-    printf("nil");
-    else
-    printf("Owner: %s\n", d->owner);
+    char cname = (d->name);
+    char cowner = (d->owner);
+    float cage = (d->age)
+    if (!cname)
+    cname = "(nil)";
+    if (!cowner)
+    cowner = "(nil)";
+    printf("Name: %s\nAge: %f\nOwner: %s\n", cname, age, cowner);
 }
 }
