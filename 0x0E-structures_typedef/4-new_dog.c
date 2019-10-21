@@ -42,7 +42,7 @@ free(p->name)
 free(p);
 return (NULL);
 }
-for (l = 0; l < k; l++)
-p->owner[k] = owner[k];
+for (i = 0; i < k; i++)
+p->owner[i] = owner[i];
 return (p);
 }
