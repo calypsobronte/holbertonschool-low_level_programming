@@ -19,7 +19,9 @@ if (p == NULL)
 return (NULL);
 }
 for (j = 0; name[j]; j++)
+{
 ;
+}
 j++;
 p->name = malloc(j * (sizeof(char)));
 if (p->name == NULL)
@@ -33,7 +35,9 @@ p->name[i] = name[i];
 }
 p->age = age;
 for (k = 0; owner[k]; k++)
+{
 ;
+}
 k++;
 p->owner = malloc(k * (sizeof(char)));
 if (p->owner == NULL)
