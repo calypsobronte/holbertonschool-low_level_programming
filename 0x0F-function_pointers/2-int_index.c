@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * array_iterator - parametro en cada elemento
+ * int_index - parametro en cada elemento
  * @array: parameter
  * @size: size_t
  * @cmp: pointer
@@ -15,7 +15,7 @@ return (-1);
 for (a = 0; a < size; a++)
 if (cmp(array[a]) != 0)
 {
-return(a);
+return (a);
 }
 return (-1);
 }
