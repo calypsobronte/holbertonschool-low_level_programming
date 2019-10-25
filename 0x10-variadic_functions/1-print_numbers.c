@@ -21,7 +21,7 @@ return;
 for (a = 0; a < n; a++)
 {
 printf("%i", va_arg(valist, int));
-if (a != (n -1) && separator != NULL)
+if (a != (n - 1) && separator != NULL)
 {
 printf("%s", separator);
 }
