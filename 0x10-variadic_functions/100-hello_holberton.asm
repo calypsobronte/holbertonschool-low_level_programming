@@ -1,8 +1,9 @@
-SECTION .data
-hello: db  "Hello, holberton", 10.0
+section .data
+    hello: db  "Hello, holberton", 10.0
 
-SECTION .text
-global main
+section .text
+    global main
+
 main:
     mov     rax, 1
     mov     rdi, 1
@@ -10,8 +11,6 @@ main:
     mov     rdx, 17
     syscall
     ;return (0)
-
-    ; syscall(SYS_EXIT, <sys_write return value> - hello_len);
     mov     rax, 60
     mov     rdi, 1
     syscall
