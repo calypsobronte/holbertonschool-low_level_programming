@@ -1,5 +1,5 @@
 section .data
-    hello: db  "Hello, holberton", 10,0
+    str: db "Hello, Holberton", 10,0
 
 section .text
     global main
@@ -7,7 +7,7 @@ section .text
 main:
     mov     rax, 1
     mov     rdi, 1
-    mov     rsi, hello
+    mov     rsi, str
     mov     rdx, 17
     syscall
     ;return (0)
