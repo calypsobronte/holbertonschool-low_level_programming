@@ -10,6 +10,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list valist;
 unsigned int a;
+char *p;
 /* initialize valist for num number of arguments */
 va_start(valist, n);
 /* if an empty parameter is sent return 0 */
@@ -20,7 +21,15 @@ return;
 /* access all the arguments assigned to valist */
 for (a = 0; a < n; a++)
 {
-printf("%s", va_arg(valist, char *));
+p = va_arg(valist, char *);
+if (p == NULL)
+{
+printf("(nil)");
+}
+else
+{
+printf("%s", p);
+}
 if (a != (n - 1) && separator != NULL)
 {
 printf("%s", separator);
