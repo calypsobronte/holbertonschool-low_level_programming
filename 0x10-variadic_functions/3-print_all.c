@@ -17,13 +17,13 @@ while (format && format[a])
 switch (format[a])
 {
 case 'c':
-printf("%c, ", va_arg(valist, int));
+printf("%c", va_arg(valist, int));
 break;
 case 'i':
-printf("%i, ", va_arg(valist, int));
+printf("%i", va_arg(valist, int));
 break;
 case 'f':
-printf("%f, ", va_arg(valist, double));
+printf("%f", va_arg(valist, double));
 break;
 case 's':
 string = va_arg(valist, char *);
@@ -40,6 +40,7 @@ b = a + 1;
 while (format[b] && (format[b] == 'c' || format[b] == 'i'
 || format[b] == 'f' || format[b] == 's'))
 {
+printf(", ");
 break;
 }
 a++;
