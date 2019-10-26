@@ -1,24 +1,21 @@
-#include "variadic_functions.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_all - function that print strings
  * @format: list of arguments c, i, f, *s
- * Return: -vacio
+ * Return: void
  */
 void print_all(const char * const format, ...)
 {
-unsigned int a = 0, b;
+unsigned int a = 0, b = 0;
 char *string;
 va_list valist;
+va_start(valist, format);
 while (format && format[a])
 {
-va_start(valist, format);
-while (format[a])
-{
-b = 1;
-switch (format[a++])
+switch (format[a])
 {
 case 'c':
 printf("%c", va_arg(valist, int));
@@ -37,16 +34,19 @@ string = "(nil)";
 }
 printf("%s", string);
 break;
-default:
-b = 0;
-break;
 }
-if (format[a] && b)
+b = a + 1;
+
+while (format[b] &&
+(format[b] == 'c' || format[b] == 'i' || format[b] == 'f' || format[b] == 's'))
 {
 printf(", ");
+break;
 }
-}
-va_end(valist);
+
+a++;
 }
 printf("\n");
+va_end(valist);
+return;
 }
