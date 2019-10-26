@@ -5,17 +5,20 @@
 /**
  * print_all - function that print strings
  * @format: list of arguments c, i, f, *s
- * Return: -
+ * Return: -vacio
  */
 void print_all(const char * const format, ...)
 {
-unsigned int a = 0, b = 0;
+unsigned int a = 0, b;
 char *string;
 va_list valist;
-va_start(valist, format);
 while (format && format[a])
 {
-switch (format[a])
+va_start(valist, format);
+while (format[a])
+{
+b = 1;
+switch (format[a++])
 {
 case 'c':
 printf("%c", va_arg(valist, int));
@@ -34,17 +37,16 @@ string = "(nil)";
 }
 printf("%s", string);
 break;
-}
-b = a + 1;
-while (format[b] && (format[b] == 'c' || format[b] == 'i'
-|| format[b] == 'f' || format[b] == 's'))
-{
-printf(", ");
+default:
+b = 0;
 break;
 }
-a++;
+if (format[a] && b)
+{
+printf(", ");
+}
+}
+va_end(valist);
 }
 printf("\n");
-va_end(valist);
-return;
 }
