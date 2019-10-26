@@ -5,6 +5,7 @@
 /**
  * print_all - function that print strings
  * @format: list of arguments c, i, f, *s
+ * Return: -
  */
 void print_all(const char * const format, ...)
 {
@@ -32,8 +33,6 @@ if (string == NULL)
 string = "(nil)";
 }
 printf("%s", string);
-break;
-default:
 break;
 }
 b = a + 1;
