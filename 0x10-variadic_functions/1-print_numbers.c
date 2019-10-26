@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
 /**
  * print_numbers - function that print numbers
  * @separator: var const char point
