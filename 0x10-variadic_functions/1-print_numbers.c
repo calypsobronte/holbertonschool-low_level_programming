@@ -20,7 +20,7 @@ return;
 /* access all the arguments assigned to valist */
 for (a = 0; a < n; a++)
 {
-printf("%i", va_arg(valist, int));
+printf("%d", va_arg(valist, int));
 if (a != (n - 1) && separator != NULL)
 {
 printf("%s", separator);
