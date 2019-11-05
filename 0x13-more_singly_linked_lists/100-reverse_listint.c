@@ -1,9 +1,8 @@
 #include "lists.h"
 /**
- * delete_nodeint_at_index - delete the node at index
+ * *reverse_listint - function that reverses a listint_t linked list.
  * @head: point of point
- * @index: of node
- * Return: 0
+ * Return: head
  */
 listint_t *reverse_listint(listint_t **head)
 {
