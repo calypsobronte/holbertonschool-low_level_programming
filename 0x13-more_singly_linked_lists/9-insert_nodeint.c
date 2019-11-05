@@ -15,13 +15,13 @@ if (head == NULL)
 return (NULL);
 }
 new = malloc(sizeof(listint_t));
-new[0].n = n;
 if (new == NULL)
 {
 return (NULL);
 }
 if (idx == 0)
 {
+new[0].n = n;
 new[0].next = *head;
 *head = new;
 return (new);
@@ -29,8 +29,9 @@ return (new);
 temp = *head;
 while (temp != NULL)
 {
-if (value + 1 == idx)
+if (value == idx - 1)
 {
+new[0].n = n;
 new[0].next = temp[0].next;
 temp[0].next = new;
 return (new);
