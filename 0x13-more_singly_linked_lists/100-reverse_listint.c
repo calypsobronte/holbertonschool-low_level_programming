@@ -7,8 +7,8 @@
  */
 listint_t *reverse_listint(listint_t **head)
 {
-listint_t *actual = NULL, *temp;
-while (head != NULL)
+listint_t *actual = NULL, *temp = NULL;
+while (*head != NULL)
 {
 actual = (*head[0]).next;
 (*head[0]).next = temp;
