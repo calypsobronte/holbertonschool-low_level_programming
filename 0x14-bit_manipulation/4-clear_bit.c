@@ -31,7 +31,7 @@ if (*n >= mult)
 }
 else
 {
-*n= 0;
+*n = 0;
 }
 return (1);
 }
