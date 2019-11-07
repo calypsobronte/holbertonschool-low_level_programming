@@ -28,14 +28,12 @@ if (cont == index)
 if (*n >= mult)
 {
 *n -= mult;
-printf("%ld\n", *n);
 }
 else
 {
 *n= 0;
-printf("%ld\n", *n);
 }
-return (cont);
+return (1);
 }
 }
 return (-1);
