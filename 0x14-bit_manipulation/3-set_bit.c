@@ -9,7 +9,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 unsigned int mult = 1, cont = 0;
 
-if(index > 64)
+if (index > 64)
 {
 return (-1);
 }
