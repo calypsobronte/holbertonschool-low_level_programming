@@ -7,10 +7,9 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-unsigned long int *point;
 unsigned int mult = 1, cont = 0;
-point = malloc(sizeof(n) * 8);
-if (point == NULL)
+
+if(index > 64)
 {
 return (-1);
 }
