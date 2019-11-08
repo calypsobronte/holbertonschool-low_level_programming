@@ -18,22 +18,13 @@ return (-1);
 }
 else
 {
-while (cont != index)
+while (cont <= index)
+{
+if (cont > 0)
 {
 mult *= 2;
+}
 cont++;
-}
-if (cont == index)
-{
-if (*n >= mult)
-{
-*n -= mult;
-}
-else
-{
-*n = 0;
-}
-return (1);
 }
 }
 return (-1);
