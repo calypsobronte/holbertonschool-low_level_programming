@@ -26,6 +26,9 @@ mult *= 2;
 }
 cont++;
 }
+*n = (*n | mult);
+*n = (*n ^ mult);
+return (1);
 }
 return (-1);
 }
