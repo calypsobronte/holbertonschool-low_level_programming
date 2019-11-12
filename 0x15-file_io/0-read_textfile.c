@@ -8,9 +8,13 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int open_file;
+int open_file, write_read;
 ssize_t sizeoflist;
-char buffer[letters + 1];
+char *buffer = malloc(letters);
+if (buffer == NULL)
+{
+return (0);
+}
 if (filename == NULL)
 return (0);
 open_file = open(filename, O_RDONLY, 0600);
@@ -19,15 +23,12 @@ if (open_file == -1)
 return (0);
 }
 sizeoflist = read(open_file, buffer, letters);
-if (sizeoflist < 1024)
-{
 buffer[letters] = '\0';
-printf("%s", buffer);
-}
-else
+close(open_file);
+write_read = write(STDOUT_FILENO, buffer, sizeoflist);
+if (write_read == -1)
 {
-printf("%s", buffer);
+return (0);
 }
-
 return (sizeoflist);
 }
