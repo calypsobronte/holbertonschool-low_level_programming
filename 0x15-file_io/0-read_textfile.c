@@ -26,5 +26,6 @@ sizeoflist = read(open_file, buffer, letters);
 buffer[letters] = '\0';
 close(open_file);
 write(STDOUT_FILENO, buffer, letters);
+free(buffer);
 return (sizeoflist);
 }
