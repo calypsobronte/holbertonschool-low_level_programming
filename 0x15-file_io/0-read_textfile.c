@@ -10,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 int open_file;
 ssize_t sizeoflist;
-char buffer[letters + 1];
+char *buffer = malloc(letters);
 if (filename == NULL)
 return (0);
 open_file = open(filename, O_RDONLY, 0600);
