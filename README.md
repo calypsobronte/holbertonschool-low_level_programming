@@ -1,1 +1,3 @@
-# holbertonschool-low_level_programming
+# Holberton School
+## Low-level programming & Algorithm ― Linux and Unix system programming
+
