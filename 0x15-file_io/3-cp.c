@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-int file_from, file_to, file_read = 1, file_write, close_from, close_to;
+int file_from, file_to, file_read, file_write, close_from, close_to;
 char buffer[SIZEOF];
 if (argc != 3)
 {
@@ -26,6 +26,7 @@ if (file_to == -1)
 dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", argv[2]);
 exit(99);
 }
+file_read = 1;
 while (file_read)
 {
 file_read = read(file_from, buffer, SIZEOF);
