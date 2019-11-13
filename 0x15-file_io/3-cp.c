@@ -20,9 +20,13 @@ if (file_from == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-file_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, S_IRUSR
-| S_IWUSR | S_IXUSR);
-while ((file_read = read(file_from, buffer, SIZEOF)) != 0)
+file_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
+if (file_to == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", argv[2]);
+exit(99);
+}
+while ((file_read = read(file_from, buffer, SIZEOF)) > 0)
 {
 file_write = write(file_to, buffer, file_read);
 if (file_write  == -1)
