@@ -48,13 +48,13 @@ exit(99);
 close_from = close(file_from);
 if (close_from == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close to %i\n", close_from);
+dprintf(STDERR_FILENO, "Error: Can't close to %i\n", file_from);
 exit(100);
 }
 close_to = close(file_to);
 if (close_to == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close to %i\n", close_to);
+dprintf(STDERR_FILENO, "Error: Can't close to %i\n", file_to);
 exit(100);
 }
 return (0);
