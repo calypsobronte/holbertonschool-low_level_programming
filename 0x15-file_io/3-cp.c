@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-int file_from, file_to, file_read, close_from, close_to;
+int file_from, file_to, file_read   , close_from, close_to;
 char buffer[SIZEOF];
 if (argc != 3)
 {
