@@ -7,11 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-int file_from, file_to, file_read, file_write, close_from, close_to;
+int file_from, file_to, file_read, close_from, close_to;
 char buffer[SIZEOF];
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 file_from = open(argv[1], O_RDONLY);
@@ -28,8 +28,7 @@ exit(99);
 }
 while ((file_read = read(file_from, buffer, SIZEOF)) > 0)
 {
-file_write = write(file_to, buffer, file_read);
-if (file_write  == -1)
+if (write(file_to, buffer, file_read)  == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
