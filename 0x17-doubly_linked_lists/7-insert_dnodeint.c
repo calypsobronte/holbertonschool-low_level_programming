@@ -21,9 +21,9 @@ if (idx == 0)
 new_node = malloc(sizeof(dlistint_t));
 if (!new_node)
 return (NULL);
-new_node[0].n = n;
-new_node[0].prev = NULL;
-new_node[0].next = *h;
+new_node->n = n;
+new_node->prev = NULL;
+new_node->next = *h;
 if (*h != NULL)
 {
 (*h)->prev = new_node;
@@ -40,17 +40,17 @@ if (new_node_next != NULL)
 {
 return (NULL);
 }
-new_node_next[0].n = n;
-new_node_next[0].next = temp[0].next;
-new_node_next[0].prev = temp;
-if (temp[0].next != NULL)
+new_node_next->n = n;
+new_node_next->next = temp->next;
+new_node_next->prev = temp;
+if (temp->next != NULL)
 {
 temp->next->prev = new_node_next;
-temp[0].next = new_node_next;
+temp->next = new_node_next;
 return (new_node_next);
 }
 }
-temp = temp[0].next;
+temp = temp->next;
 }
 return (NULL);
 }
