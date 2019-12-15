@@ -27,20 +27,20 @@ return (NULL);
 for (cont = 0; cont < idx; cont++)
 {
 new_node_next = temp;
-temp = temp[0].next;
+temp = temp->next;
 }
 new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
 {
 return (NULL);
 }
-new_node[0].n = n;
-new_node[0].prev = new_node_next;
-new_node[0].next = temp;
-new_node_next[0].next = new_node;
+new_node->n = n;
+new_node->prev = new_node_next;
+new_node->next = temp;
+new_node_next->next = new_node;
 if (temp != NULL)
 {
-temp[0].prev = new_node;
+temp->prev = new_node;
 }
 return (new_node);
 }
