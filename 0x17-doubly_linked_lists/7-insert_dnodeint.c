@@ -15,7 +15,6 @@ if (h == NULL)
 {
 return (NULL);
 }
-temp = *h;
 if (idx == 0)
 {
 return (add_dnodeint(h, n));
@@ -24,6 +23,7 @@ if (cont > idx)
 {
 return (NULL);
 }
+temp = *h;
 for (cont = 0; cont < idx; cont++)
 {
 new_node_next = temp;
