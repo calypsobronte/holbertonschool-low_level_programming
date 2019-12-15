@@ -1,8 +1,7 @@
 #include "lists.h"
 /**
- * 
- * 
- * 
+ * free_dlistint - function free list
+ * @head: head of the list and point of the struct
  */
 void free_dlistint(dlistint_t *head)
 {
