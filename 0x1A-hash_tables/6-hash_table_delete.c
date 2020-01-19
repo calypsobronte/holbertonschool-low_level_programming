@@ -27,7 +27,7 @@ free(node_t);
 }
 i++;
 }
-free(ht[0].array);
+free(ht->array);
 free(ht);
 }
 }
