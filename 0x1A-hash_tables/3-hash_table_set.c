@@ -2,11 +2,11 @@
 /**
  * *add_node - functin add new node
  * @head: Head of node
- * @key: key of node
+ * @str: string
  * @value: value of the key
  * Return: address of the new node or NULL if it fails
  */
-hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
+hash_node_t *add_node(hash_node_t **head, const char *str, const char *value)
 {
 hash_node_t *new_node;
 
@@ -28,8 +28,9 @@ new_node->key = strdup(str);
 new_node->next = *head;
 (*head) = new_node;
 }
-return (new_node);turn (new_node);
+return (new_node);
 }
+
 /**
  * hash_table_set - adds element to the hash table
  * @ht: pointer
