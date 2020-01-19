@@ -11,7 +11,7 @@ hash_node_t *node_t;
 
 if (ht)
 {
-while (i < ht[0].size)
+while (i < ht->size)
 {
 if (ht[0].array[i] != NULL)
 {
@@ -20,8 +20,8 @@ while (tmp)
 {
 node_t = tmp;
 tmp = tmp[0].next;
-free(node_t[0].key);
-free(node_t[0].value);
+free(node_t->key);
+free(node_t->value);
 free(node_t);
 }
 }
