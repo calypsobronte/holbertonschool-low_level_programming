@@ -13,13 +13,13 @@ if (ht)
 {
 while (i < ht->size)
 {
-if (ht[0].array[i] != NULL)
+if (ht->array[i] != NULL)
 {
 tmp = ht[0].array[i];
 while (tmp)
 {
 node_t = tmp;
-tmp = tmp[0].next;
+tmp = tmp->next;
 free(node_t->key);
 free(node_t->value);
 free(node_t);
