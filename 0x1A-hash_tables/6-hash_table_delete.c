@@ -9,23 +9,23 @@ unsigned long int i = 0;
 
 hash_node_t *tmp;
 
-while (i <= ht[0].size)
+while (i <= ht->size)
 {
-tmp = ht[0].array[i];
+tmp = ht->array[i];
 if (tmp != NULL)
 {
 while (tmp != NULL)
 {
-hash_node_t *tmp2 = tmp[0].next;
+hash_node_t *tmp2 = tmp->next;
 
-free(tmp[0].key);
-free(tmp[0].value);
+free(tmp->key);
+free(tmp->value);
 free(tmp);
 tmp = tmp2;
 }
 }
 i = i + 1;
 }
-free(ht[0].array);
+free(ht->array);
 free(ht);
 }
