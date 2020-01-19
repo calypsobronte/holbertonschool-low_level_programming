@@ -10,17 +10,25 @@ hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 {
 hash_node_t *new_node;
 
+if (*head != NULL && strcmp((*head)->key, str) == 0)
+{
+free((*head)->value);
+(*head)->value = strdup(value);
+return (*head);
+}
+else
+{
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
 {
 return (NULL);
 }
-new_node[0].key = strdup(key);
-new_node[0].value = strdup(value);
-new_node[0].next = *head;
-
-*head = new_node;
-return (new_node);
+new_node->value = strdup(value);
+new_node->key = strdup(str);
+new_node->next = *head;
+(*head) = new_node;
+}
+return (new_node);turn (new_node);
 }
 /**
  * hash_table_set - adds element to the hash table
@@ -33,21 +41,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int index = 0;
 
-if (strcmp(key, "") == 0 || ht == NULL || key == NULL || value == NULL)
-{
+if (ht == NULL)
 return (0);
-}
-
-index = key_index((unsigned char *)key, ht[0].size);
-if (!ht[0].array)
-{
+index = key_index((unsigned char *)key, ht->size);
+ht->array[index] = add_node(&ht->array[index], key, value);
+if (ht->array[index] != NULL)
+return (1);
 return (0);
-}
-if (ht[0].array[index] && strcmp(key, ht[0].array[index][0].key) == 0)
-{
-ht[0].array[index][0].value = strdup(value);
-return (1);
-}
-ht[0].array[index] = add_node(&ht[0].array[index], key, value);
-return (1);
 }
