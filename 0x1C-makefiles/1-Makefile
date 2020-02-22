@@ -10,5 +10,5 @@ SRC = main.c holberton.c
 # NAME = holberton
 
 # build an executable named holberton from holberton.c
-all:
+all: $(SRC)
 	$(CC) $(SRC) -o holberton
