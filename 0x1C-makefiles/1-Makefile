@@ -3,12 +3,12 @@ CC = gcc
 
 # compiler flags:
 #  -Wall turns on most, but not all, compiler warnings
-CFLAGS  = -Wall -Werror -Wextra -pedantic
+# CFLAGS  = -Wall -Werror -Wextra -pedantic
 
 # the build target executable:
 SRC = main.c holberton.c
-# NAME = holberton
+NAME = holberton
 
 # build an executable named holberton from holberton.c
-all:
-	$(CC) $(SRC) -o holberton
+all: $(SRC)
+	$(CC) $^ -o $(NAME)
