@@ -1,0 +1,14 @@
+# the compiler: gcc for C program, define as g++ for C++
+CC = gcc
+
+# compiler flags:
+#  -Wall turns on most, but not all, compiler warnings
+CFLAGS  = -Wall -Werror -Wextra -pedantic
+
+# the build target executable:
+TARGET = main.c holberton.c
+NAME = holberton
+
+# build an executable named holberton from holberton.c
+all: $(TARGET)
+	$(CC) $^ -o $(NAME)
