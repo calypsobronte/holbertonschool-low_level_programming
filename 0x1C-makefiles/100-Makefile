@@ -6,7 +6,7 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 RM = rm -f
 
-all: $(OBJ)
+all: m.h $(OBJ)
 	$(CC) $^ -o $(NAME)
 
 clean:
