@@ -7,8 +7,8 @@ CFLAGS  = -Wall -Werror -Wextra -pedantic
 
 # the build target executable:
 SRC = main.c holberton.c
-NAME = holberton
+# NAME = holberton
 
 # build an executable named holberton from holberton.c
-all: $(SRC)
-	$(CC) $^ -o $(NAME)
+all:
+	$(CC) $(SRC) -o holberton
